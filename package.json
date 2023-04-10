@@ -1,4 +1,6 @@
 {
+  "main": "./build/index.js",
+  "module": "./build/index.js",
   "name": "reiko-business-card",
   "version": "0.1.0",
   "private": true,
@@ -17,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "transpile": "NODE_ENV=production npx babel --out-dir ../build --relative --copy-files src"
   },
   "eslintConfig": {
     "extends": [
@@ -38,6 +41,15 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.18.6"
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   }
 }
