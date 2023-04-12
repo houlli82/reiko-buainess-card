@@ -5,7 +5,7 @@ import Logo from "./assets/vivadog_sign.png";
 import Reiko from "./assets/reiko.jpg";
 import Insta from "./assets/instagram.png";
 import Line from "./assets/line.png";
-// import Ionicons from '@expo/vector-icons/Ionicons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 const App = () => {
   return (
@@ -25,28 +25,28 @@ const App = () => {
       <View style={styles.contact}>
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={() => { Linking.openURL(`tel:0426238115`); }}>
-            {/* <Ionicons name="call-outline" style={styles.icon} size={32} /> */}
+            <Ionicons name="call-outline" style={styles.icon} size={32} />
           </TouchableOpacity>
           <Text style={styles.buttonText}>042-623-8115</Text>
         </View>
 
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={() => { Linking.openURL(`tel:08010073207`); }}>
-            {/* <Ionicons name="phone-portrait-outline" style={styles.icon} size={32} /> */}
+            <Ionicons name="phone-portrait-outline" style={styles.icon} size={32} />
           </TouchableOpacity>
           <Text style={styles.buttonText}>080-1007-3207</Text>
         </View>
 
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={() => { Linking.openURL('mailto:houlli82@@htomail.co.uk?subject=Enquiries') }}>
-            {/* <Ionicons name="mail-outline" style={styles.icon} size={32} /> */}
+            <Ionicons name="mail-outline" style={styles.icon} size={32} />
           </TouchableOpacity>
           <Text style={styles.buttonText}>vivadog2003@gmail.com</Text>
         </View>
 
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={() => { Linking.openURL('https://www.google.com/maps/search/?api=1&query=Viva+Dog+Hachioji') }}>
-            {/* <Ionicons name="location-outline" style={styles.icon} size={32} /> */}
+            <Ionicons name="location-outline" style={styles.icon} size={32} />
           </TouchableOpacity>
           <Text style={styles.buttonText}>〒192-0073, Hachioji-shi, Tokyo</Text>
         </View>
